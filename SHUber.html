@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SHUber Lo-Fi Mobile App Prototype</title>
+    <style>
+      body {
+        background-color: #ddd;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        font-family: Arial, sans-serif;
+      }
+      .phone {
+        width: 375px;
+        background-color: white;
+        border: 2px solid #aaa;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 0 10px #aaa;
+      }
+      .screen {
+        border: 2px dashed #999;
+        padding: 15px;
+        margin-bottom: 30px;
+      }
+      h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      .input-box,
+      .button,
+      .map {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #888;
+        background-color: #f8f8f8;
+      }
+      .button {
+        background-color: #eee;
+        text-align: center;
+        cursor: pointer;
+      }
+      .map {
+        height: 120px;
+        text-align: center;
+        line-height: 120px;
+        color: #aaa;
+        font-weight: bold;
+      }
+      .info {
+        background-color: #f1f1f1;
+        padding: 10px;
+        border: 1px solid #aaa;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone">
+    
+      <div class="screen">
+        <h2>Login</h2>
+        <label>Email:</label>
+        <input class="input-box" type="text" placeholder="Enter email" />
+
+        <label>Password:</label>
+        <input class="input-box" type="password" placeholder="Enter password" />
+
+        <div class="button">Login</div>
+        <div class="button">Sign Up</div>
+      </div>
+
+      <div class="screen">
+        <h2>Home</h2>
+        <div class="map">[ Map Placeholder ]</div>
+
+        <label>Pickup Location:</label>
+        <input class="input-box" type="text" value="Current Location" />
+
+        <label>Drop-off Location:</label>
+        <input class="input-box" type="text" placeholder="Enter drop-off" />
+
+        <div class="button">Request Ride</div>
+      </div>
+
+
+      <div class="screen">
+        <h2>Driver Assigned</h2>
+        <div class="info">
+          <p><strong>Driver:</strong> Ahmed</p>
+          <p><strong>Vehicle:</strong> Toyota Camry</p>
+          <p><strong>ETA:</strong> 3 mins</p>
+        </div>
+        <div class="map">[ Driver on Route ]</div>
+        <div class="button">Cancel Ride</div>
+      </div>
+
+
+      <div class="screen">
+        <h2>Tracking</h2>
+        <div class="map">[ Live Tracking Map ]</div>
+        <div class="info"><strong>Status:</strong> On the way</div>
+        <div class="button">Cancel Ride</div>
+      </div>
+
+      <div class="screen">
+        <h2>Trip Summary</h2>
+        <div class="info">
+          <p><strong>Start:</strong> Current Location</p>
+          <p><strong>End:</strong> Drop-off Location</p>
+          <p><strong>Cost:</strong> $25</p>
+          <p><strong>Payment:</strong> Visa **** 1234</p>
+        </div>
+        <div class="button">Rate Driver</div>
+      </div>
+    </div>
+  </body>
+</html>
